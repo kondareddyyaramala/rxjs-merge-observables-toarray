@@ -1,15 +1,6 @@
 console.clear();
-import { from, interval, of } from 'rxjs';
-import { fromArray } from 'rxjs/internal/observable/fromArray';
-import {
-  toArray,
-  take,
-  tap,
-  mergeAll,
-  map,
-  reduce,
-  filter
-} from 'rxjs/operators';
+import { from, of } from 'rxjs';
+import { toArray, mergeAll, map, filter } from 'rxjs/operators';
 
 of({ MK: 'jjj' })
   .pipe(
